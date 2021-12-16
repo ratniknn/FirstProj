@@ -1,10 +1,29 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>{{ title }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'task_board/images/IcoTaskBoard.png' %}" type="image/png"/>
+    <link href="{% static 'task_board/css/styles.css' %}" rel="stylesheet" type="text/css"/>
+    <title>Task Board</title>
 </head>
 <body>
-
+    <div class="wrapper">
+        <div class="log_form">
+            <form action="main_page.html">
+                <p class="form_title"><h1>Авторизация</h1></p>
+                <input class="log_in form_colum" type="text" value="Логин">
+                <input class="pass_in form_colum"type="password" value="Пароль">
+                <div><button class="log_in_btn" > ВОЙТИ</button></div>
+                <div class="reg_in">
+                    <p class="reg_in_text"><a href="">Регистрация</a> </p>
+                    <p class="reg_in_text"><a href="">Восстановить пароль?</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

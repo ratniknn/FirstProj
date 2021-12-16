@@ -11,6 +11,6 @@ def loginform(request):
 
 def taskinwork(request):
 
-    return render(request, 'task_board/base.html', {'menu': menu, 'title': 'Заявки в работе'})
+    return render(request, 'task_board/taskinwork.html', {'menu': menu, 'title': 'Заявки в работе'})
 
 

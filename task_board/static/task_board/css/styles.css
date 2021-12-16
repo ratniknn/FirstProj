@@ -1,0 +1,209 @@
+
+/*обнуление стилей*/
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*::before,*::after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+
+/*обнуление стилей*/
+
+body {
+
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: black;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/* Начало CSS код для формы входа*/
+
+.log_form {
+    position: fixed;
+    top: calc(50% - 150px);  /*top: calc(50% - высота_блока/2);*/
+    left: calc(50% - 150px); /*left: calc(50% - ширина_блока/2);*/
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+
+    width: 300px;
+    height: 300px;
+    background-color: #F4F3F3;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.log_in, .pass_in {
+    text-align: center;
+    margin-top: 7px;
+    width: 250px;
+    height: 40px;
+    background: #7066fdab;
+/* Gray 3 */
+
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 6px;
+}
+
+.log_in_btn {
+    background-color: #301B52;
+    margin: 6px;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+}
+
+.reg_in {
+    margin-top: 12px;
+}
+
+p.reg_in_text{
+    margin-top: 6px;
+}
+
+/* Конец CSS код для формы входа*/
+
+/* Начало CSS код для главной страницы */
+
+.block{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background: rgba(20,139,255,1);
+    opacity: 1;
+    border-radius: 5px;
+    flex: 0 0 auto;
+    min-height: 60px;
+  }
+
+.header_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.main_content {
+    display: flex;
+    justify-content: center;
+    flex: 1 0 auto;
+}
+
+ul.menu {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    font-family: Roboto;
+}
+
+li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+  flex-basis: 100px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  font-family: Roboto;
+  font-weight: Bold;
+  font-size: 24px;
+  opacity: 1;
+  color: white;
+}
+
+ul>li{
+    margin: 6px;
+    text-align: center;
+}
+
+.sidebar{
+    width: 250px;
+    background: rgba(214,231,238,0.4300000071525574);
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.info {
+    width: 765px;
+    background: rgba(201,238,229,0.3700000047683716);
+    border-radius: 5px;
+    margin: 3px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: rgba(20,139,255,1);
+    opacity: 1;
+    border-radius: 5px;
+    flex-shrink: 0;
+    min-height: 60px;
+}
+/* Конец CSS код для главной страницы */
